@@ -1,0 +1,101 @@
+h1{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 50px;
+}
+
+div.title{
+    text-align: right;
+    padding: 3px;
+}
+
+.btn-primary{
+    font-size: 27px;
+    font-weight: 30;
+    background-color: rgb(94, 37, 228);
+    border-color: rgb(94, 37, 228);
+}
+
+
+.btn-primary2{
+    font-size: 27px;
+    font-weight: 30;
+    color: white;
+    background-color: rgb(72, 70, 223);
+    border-color: rgb(72, 70, 223);
+}
+
+.btn-primary2:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+.btn-primary3{
+    font-size: 27px;
+    font-weight: 30;
+    color: white;
+    background-color: rgb(40, 116, 204);
+    border-color: rgb(40, 116, 204);
+}
+
+.btn-primary3:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+.btn-primary4{
+    font-size: 27px;
+    font-weight: 30;
+    color: white;
+    background-color: rgb(47, 161, 206);
+    border-color: rgb(47, 161, 206);
+}
+
+.btn-primary4:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+.btn-primary5{
+    font-size: 27px;
+    font-weight: 30;
+    color: white;
+    background-color: rgb(47, 190, 180);
+    border-color: rgb(47, 190, 180);
+}
+
+.btn-primary5:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+
+div.body{
+    padding-left: 150px;
+}
+
+div.body2{
+    padding-left: 150px;
+    padding-top: 20px;
+}
+
+div.body3{
+    padding-left: 150px;
+    padding-top: 20px;
+}
+
+main{
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background-color: rgb(17, 17, 17);
+  }
+

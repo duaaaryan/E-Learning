@@ -9,7 +9,7 @@
     "nodemon": "^2.0.16"
   },
   "scripts": {
-    "devStart": "nodemon ./server.js"
+    "start": "node server.js"
   },
   "name": "e-learning",
   "description": "Its a place where Students can share what they are not understanding in school and is is an online forum and a place where they will learn thorugh interactive activites.",

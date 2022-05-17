@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="auto" height="1000px" viewBox="auto" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Large Shape 2_Full</title>
+    <g id="Large-Shape-2_Full" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(-60.000000, 1.000000)" fill="#EAEEF4">
+            <path d="M60.3886581,0.855620268 L1356.38866,0.855620268 C1703.22092,160.944271 1702.88759,276.477298 1355.38866,347.454701 C834.140259,453.920806 743.601214,678.85562 59,677.992614 C-19.5231303,677.893628 -19.0602443,452.181296 60.3886581,0.855620268 Z" id="Rectangle" transform="translate(808.357940, 339.427810) scale(1, -1) translate(-808.357940, -339.427810) "></path>
+            <rect id="Rectangle" x="222" y="554" width="1297" height="962"></rect>
+        </g>
+    </g>
+</svg>

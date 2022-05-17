@@ -1,0 +1,70 @@
+.btn-primary-math{
+    font-size: 28px;
+    font-weight: 30;
+    color: white;
+    background-color: rgb(37, 104, 228);
+    border-color: rgb(37, 104, 228);
+
+    
+}
+body{
+
+    background-color: rgb(255, 255, 255);
+}
+.btn-primary-math:hover {
+    color: white;
+    background-color: rgb(94, 37, 228);
+    border-color: rgb(94, 37, 228);
+}
+
+.mathstart{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+    align-items: center;
+    padding-top: 30px;
+
+}
+
+.mathstart{
+    justify-content: center;
+}
+
+.letsstartmathdiv{
+    background-color: rgb(64, 144, 218);
+}
+
+h1{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+
+div.title{
+    text-align: center;
+    padding: 3px;
+}
+
+h2{
+    color: Black;
+    text-align: start;
+    padding-top: 50px;
+    font-size: 27px;
+    padding-left: 160px;
+    
+}
+
+h2.algebra{
+    color: rgb(253, 23, 92);
+
+}
+ 
+h3{
+   color: rgb(46, 183, 207);
+   text-align: center;
+   padding-top: 20px;
+   font-size: 27px;
+   
+}

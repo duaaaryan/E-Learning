@@ -8,6 +8,9 @@
     <head>
         <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" type="image/jpg" href= https://wallpaperaccess.com/full/1703370.jpg />
+        <link rel="stylesheet" href="Timer.css">
+        <audio id="xyz" src="https://freesound.org/data/previews/535/535976_9015615-lq.ogg" preload="auto">play audio</audio>
         
       </head>
       
@@ -43,6 +46,58 @@
             </h2>
     </div>
     </div>
+  <div class ="row">
+    <div id="clockdiv" class="clockdiv">
+        <p>CAIE May/June 2022 Session Starts</p>
+       <style>
+     p{
+         font-weight:400 ;
+         font-size: 18px;
+     }
+     </style>
+
+       <div>
+         
+         <span class="days"></span>
+         <div class="smalltext">Days</div>
+       </div>
+       <div>
+         <span class="hours"></span>
+         <div class="smalltext">Hours</div>
+       </div>
+       <div>
+         <span class="minutes"></span>
+         <div class="smalltext">Minutes</div>
+       </div>
+       <div>
+         <span class="seconds"></span>
+         <div class="smalltext">Seconds</div>
+       </div>
+     </div>
+     
+     </head>
+     <script src="Countdown_Timer.js"></script>
+     </script>
+     <div class="left">
+    <h1 class="listtitle" style = "text-align: center !important;">IGCSE Subjects</h1>
+    
+    <%items.products.forEach(function(item){ %>
+
+
+                    <div class="FoldersButton">
+
+                    <a class = "name" onclick="window.location.href='<%= item.href %>'" style="text-align: left; margin-left: 5px"><%= item.name%></a> 
+                    
+                    <div style="text-align: left;">
+        
+                                        
+                        </div>
+                        </div>
+
+                <% }) %>
+            </div>
+        </div>
+
     <br>
     <br>
     <br>

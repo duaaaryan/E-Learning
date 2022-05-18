@@ -210,9 +210,7 @@ body{
  
 }
 
-a{
-    color: rgb(0, 0, 0);
-}
+
 li{
     list-style: none;
 }
@@ -494,7 +492,81 @@ body {
     }
 }
 
+.row{
 
+    box-shadow: 20px 2px 50px 10px 20px black;
+}
 
+.FoldersButton{
 
+    display: block;
+    justify-content: left;
+    text-align: left;
+    padding: 15px 20px 15px 50px;
+    text-decoration: none;
+    color: #000;
+    width: 100%;
+    background: url(images/folder.png) no-repeat 10px 10px;
+    background-size: 30px 36px
+ 
+}
 
+.row{
+
+    width:90%;
+    height: auto !important;
+    margin: auto;
+
+    display: flex;
+    
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 65% auto;
+    grid-template-areas:
+        'left clockdiv'
+}
+
+.left{
+    grid-area: left;
+
+}
+
+.clockdiv{
+    grid-area: clockdiv;
+}
+
+.listtitle {
+    font-weight: 600;
+    padding: 15px;
+    text-align: left;
+    background-color: #eee;
+    border-radius: 15px 15px 0 0 ;
+    width:100%;
+}
+
+p{
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight:normal
+}
+
+span{
+    font-family: Nunito Sans !important;
+    font-style: normal;
+    font-weight:normal
+}
+
+.FoldersButton.solid {border-style: solid;}
+
+a{
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight:500;
+    font-size:  20px;
+}
+a:hover{
+    transition: 0.1s;
+    color: rgb(0, 202, 94) !important;
+    text-decoration: underline !important;
+
+}

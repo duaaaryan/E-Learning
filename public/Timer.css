@@ -1,0 +1,50 @@
+/* If the screen size is 601px or more, set the font-size of <div> to 80px */
+
+	body{
+		text-align: center;
+
+	  background-repeat: no-repeat;
+	  background-attachment: fixed;
+	  background-size: 100%;
+	}
+
+
+	  
+	  #clockdiv > div{
+
+
+			  border-bottom: 3px solid #3284ff;
+		  display: inline-block;
+	  }
+	  
+	  #clockdiv div > span{
+		  padding: 15px;
+		font-size: 24px;
+
+		  display: inline-block;
+	  }
+	
+	  #clockdiv{
+
+		color: #212120;
+		display: inline-block;
+		font-weight: 200;
+		text-align: center;
+
+		background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.15),0 6px 20px 0 rgba(0,0,0,.1);
+	padding: 10px;
+	margin-bottom: 10px;
+	height: 155px !important;
+
+
+	}
+
+	.smalltext{
+
+		font-size: 14px;
+		
+
+	}
+

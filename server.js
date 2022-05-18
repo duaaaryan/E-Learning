@@ -14,8 +14,8 @@ app.set('view engine', 'ejs')
 app.use(express.static('public'))
 app.use(express.json())
 
-app.get('/index', function(req, res){
-    fs.readFile('items.json', function(error, data){
+app.get('/', function(req, res){
+    fs.readFile('json/items.json', function(error, data){
         if(error){
             res.status(500).end()
         }
@@ -31,4 +31,21 @@ app.get('/index', function(req, res){
 
 
 
-app.listen(process.env.PORT || 5000)
+app.get('/International-Math/2021.ejs', function(req, res){
+    fs.readFile('json/items.json', function(error, data){
+        if(error){
+            res.status(500).end()
+        }
+        else{
+            res.render('International-Math/2021.ejs', {
+
+                items: JSON.parse(data)
+                
+            })
+        }
+    })
+})
+
+
+
+app.listen(process.env.PORT || 9000)

@@ -15,6 +15,7 @@
 
 			  border-bottom: 3px solid #3284ff;
 		  display: inline-block;
+		  
 	  }
 	  
 	  #clockdiv div > span{
@@ -33,7 +34,7 @@
 
 		background-color: #fff;
 	border-radius: 10px;
-	box-shadow: 0 2px 4px 0 rgba(0,0,0,.15),0 6px 20px 0 rgba(0,0,0,.1);
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.15),0 6px 20px 0 rgba(0,0,0,.1), rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;;
 	padding: 10px;
 	margin-bottom: 10px;
 	height: 155px !important;

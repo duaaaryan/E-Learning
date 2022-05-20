@@ -1,0 +1,184 @@
+.search {
+  --background: #ffffff;
+  --text-color: #414856;
+  --primary-color: #4F29F0;
+  --border-radius: 10px;
+  --width: 190px;
+  --height: 55px;
+  background: var(--background);
+  width: 210px;
+  height: var(--height);
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--border-radius);
+  -webkit-box-shadow: 0 10px 30px rgba(65, 72, 86, 0.05);
+          box-shadow: 0 10px 30px rgba(65, 72, 86, 0.05);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+      margin: auto;
+          align-items: center;
+}
+
+.search input[type="text"] {
+  --width: 190px;
+  position: relative;
+  width: var(--widtht) !important;
+  height: var(--height);
+  font: 400 16px 'Varela Round', sans-serif;
+  color: var(--text-color);
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  padding: 0 0 0 40px;
+  -webkit-transition: width .6s ease;
+  transition: width .6s ease;
+  z-index: 10;
+  opacity: 0;
+  cursor: pointer;
+  margin: auto;
+}
+
+.search input[type="text"]:focus {
+  --width: 190px;
+  z-index: 0;
+  opacity: 1;
+  width: var(--width);
+  margin: auto;
+}
+
+.search input[type="text"]:focus ~ .symbol::before {
+  width: 0%;
+  margin: auto;
+}
+
+.search input[type="text"]:focus ~ .symbol:after {
+  -webkit-clip-path: inset(0% 0% 0% 100%);
+          clip-path: inset(0% 0% 0% 100%);
+  -webkit-transition: -webkit-clip-path .04s linear .105s;
+  transition: -webkit-clip-path .04s linear .105s;
+  margin: auto;
+  transition: clip-path .04s linear .105s;
+  transition: clip-path .04s linear .105s, -webkit-clip-path .04s linear .105s;
+}
+
+.search input[type="text"]:focus ~ .symbol .cloud {
+
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease;
+  margin: auto;
+}
+
+.search input[type="text"]:focus ~ .symbol .lens {
+  top: 20px;
+  left: 15px;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+          margin: auto;
+  fill: var(--primary-color);
+  -webkit-transition: top .5s ease .1s, left .5s ease .1s, fill .3s ease;
+  transition: top .5s ease .1s, left .5s ease .1s, fill .3s ease;
+}
+
+.search .symbol {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.search .symbol:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--primary-color);
+  z-index: -1;
+  margin: auto;
+  -webkit-transition: width .6s ease;
+  transition: width .6s ease;
+}
+
+.search .symbol:after {
+  content: "";
+  position: absolute;
+  top: 21px;
+  left: 21px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  z-index: 1;
+  -webkit-clip-path: inset(0% 0% 0% 0%);
+          clip-path: inset(0% 0% 0% 0%);
+  -webkit-transition: -webkit-clip-path .04s linear .225s;
+  transition: -webkit-clip-path .04s linear .225s;
+  transition: clip-path .04s linear .225s;
+  transition: clip-path .04s linear .225s, -webkit-clip-path .04s linear .225s;
+}
+
+.search .symbol .cloud,
+.search .symbol .lens {
+  position: absolute;
+  fill: #fff;
+  stroke: none;
+  top: 50%;
+
+  left: 50%;
+}
+
+.search .symbol .cloud {
+  width: 35px;
+  height: 32px;
+  -webkit-transform: translate(-50%, -60%);
+          transform: translate(-50%, -60%);
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease;
+  margin: auto;
+}
+
+.search .symbol .lens {
+  fill: #fff;
+  width: 16px;
+  height: 16px;
+  margin: auto;
+  z-index: 2;
+  top: 24px;
+  left: 24px;
+  -webkit-transition: top .3s ease, left .3s ease, fill .2s ease .2s;
+  transition: top .3s ease, left .3s ease, fill .2s ease .2s;
+}
+
+body {
+  background: #E8EBF3;
+
+          align-items: center;
+}
+
+body .socials {
+  position: fixed;
+  display: block;
+  left: 20px;
+  bottom: 20px;
+}
+

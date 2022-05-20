@@ -7,6 +7,7 @@
     "dotenv": "^16.0.1",
     "ejs": "^3.1.8",
     "express": "^4.18.1",
+    "node-sass": "^7.0.1",
     "nodejs": "^0.0.0",
     "react": "^18.1.0"
   },
@@ -15,7 +16,8 @@
   },
   "scripts": {
     "devStart": "nodemon server.js",
-    "start": "node server.js"
+    "start": "node server.js",
+    "sass": "node-sass -w scss/ -o css/ --recursive"
   },
   "name": "e-learning",
   "description": "Its a place where Students can share what they are not understanding in school and is is an online forum and a place where they will learn thorugh interactive activites.",

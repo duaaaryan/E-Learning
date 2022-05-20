@@ -195,8 +195,9 @@ body{
     position: relative;
     width:100%;
     bottom: 0px;
+    color: white !important;
     height:280px;   /* Height of the footer */
-    background: rgb(211, 250, 238);
+    background: rgb(50, 119, 247);
 
 
 }

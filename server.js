@@ -29,7 +29,7 @@ app.get('/', function(req, res){
     })
 })
 
-
+app.use(express.static('public'))
 
 app.get('/International-Math/2021.ejs', function(req, res){
     fs.readFile('json/items.json', function(error, data){
@@ -46,6 +46,21 @@ app.get('/International-Math/2021.ejs', function(req, res){
     })
 })
 
+
+app.get('/about.ejs', function(req, res){
+    fs.readFile('json/items.json', function(error, data){
+        if(error){
+            res.status(500).end()
+        }
+        else{
+            res.render('/about.ejs', {
+
+                items: JSON.parse(data)
+                
+            })
+        }
+    })
+})
 
 
 app.listen(process.env.PORT || 9000)

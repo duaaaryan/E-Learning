@@ -12,21 +12,34 @@
         <link rel="stylesheet" href="Timer.css">
         <link rel="stylesheet" href="a.css">
         <audio id="xyz" src="https://freesound.org/data/previews/535/535976_9015615-lq.ogg" preload="auto">play audio</audio>
+        <script src="change-theme.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
         
-      </head>
       
+      </head>
+      <style>
+        /* Rules for icon sizes: */
+        .material-icons.md-18 { font-size: 18px; }
+        .material-icons.md-24 { font-size: 24px; } /* Default */
+        .material-icons.md-36 { font-size: 36px; }
+        .material-icons.md-48 { font-size: 48px; }
+        </style>
     
     <script src="work.js"></script>
     
 </head>
 
 
-<body>
+<body >
 
+ 
   
-    <div style="background-color: rgb(243,243,248); " >
-    <div class ="title" style="padding-top: 10px; background-color: white">
-        <h1 style=" padding-left: 20px;text-align: left;font-size: 2.8rem;font-weight: 900;line-height: 32px;font-family: Mercury Text SSm serif; line-height: 32px; color: rgb(5, 64, 70)">Revision Past Papers</h1>
+    <div class="top-section" style="background-color: rgb(243,243,248); " >
+
+    <div class ="title" style="padding-top: 10px;">
+      <input onclick="eventMain()" id="mode" type='checkbox'>
+        <h1 class="main-title"  style=" padding-left: 20px;text-align: left;font-size: 2.8rem;font-weight: 900;line-height: 32px;font-family: Mercury Text SSm serif; line-height: 32px; width: 500px;">Revision Past Papers</h1>
 
         
     </div >
@@ -35,7 +48,7 @@
     max-width: none;">
         <div style="padding-bottom: 200px; justify-content: center; align-items: center; text-align: center; width: 58%; margin: auto;">
         <h1 style=" color: white;font-family: Nunito Sans; font-size: 2.1rem; line-height: 43px; font-weight: 750; text-align: center;">Who are We?</h1>
-        <div class="body-2" style="color: white; font-size: 22px; ">
+        <div class="body-2" style="font-size: 22px; ">
     We are Revision Past Papers, and we are here to provide past papers and markschemes for IGCSE with ease, as well as track your score as you complete the papers to create a log of how prepared you are for your exams.
         </div>
     </div>
@@ -45,12 +58,14 @@
 
 
 
-    <h1 style=" color: black;font-family: Nunito Sans; font-size: 2.1rem; font-weight: Bold;line-height: 32px;font-family: Mercury Text SSm serif; height: 42px;line-height: 32px; text-align: center;">Browse Our Guides</h1>
+    <h1 class ="h1maybe" style="font-family: Nunito Sans; font-size: 2.1rem; font-weight: Bold;line-height: 32px;font-family: Mercury Text SSm serif; text-align: center; margin-bottom: 0em !important;">Browse Our Guides</h1>
  
 
-    <div style="padding-bottom: 25px; ">
+    <div  class="browse" style="padding-bottom: 25px; ">
       <div class="search">
-        <input type="text" placeholder="search" />
+        
+        <input style="background-image: none;"type="text" placeholder="search" />
+
         <div class="symbol">
           <svg class="cloud">
             <use xlink:href="#cloud" />
@@ -100,15 +115,17 @@
   </div>
 </div>
 
-        <div  style="color: black; font-size: 24px; padding-top: 50px; ">
-            <h2>
-        We are Exemplar, we aim to give children education in a way that they can easily comprehend.
+        <div  class="we_are" style=" font-size: 24px; padding-top: 50px; ">
+            <h2 style="margin-bottom: 0em!important; padding-top:0px !important; padding-bottom:30px !important;">
+        Please select below, the Subject for which you would like to attain the past papers:
             </h2>
           </div>
     </div>
     </div>
     <div >
-    <div >
+
+
+    <div class="bigger_row">
 
 
 
@@ -146,8 +163,8 @@
      </head>
      <script src="Countdown_Timer.js"></script>
      </script>
-     <div class="left" style=" border-radius: 15px !important; background-color: white;">
-    <h1 class="listtitle" style = "text-align: center !important; color: white !important">IGCSE Subjects</h1>
+     <div class="left" style=" border-radius: 15px !important;">
+    <h1 class="listtitle" style = "text-align: center !important; color: white">IGCSE Subjects</h1>
     
 
 
@@ -156,8 +173,8 @@
     <%items.products.forEach(function(item){ %>
       <hr style="width:100%; align-items:left !important; margin-top: 0.5rem !important; margin-bottom: 0.5rem !important ">
 
-                    <div class="FoldersButton">
-
+                    <div class="FoldersButton" >
+                      <i class="material-icons md-36">perm_media</i>
                     <a class = "name" onclick="window.location.href='<%= item.href %>'" style="text-align: left; margin-left: 5px"><%= item.name%></a> 
                     
                     <div style="text-align: left;">
@@ -173,10 +190,27 @@
       </div>
 
 </div>
-<div class="footer" style="background-image: url('images/coffee.svg'">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<div class="footer">
+
+
+
     <div class="footer-wrapper_links"><ul class="footer-wrapper_links-list" >
         <li><a href="aboutus.html">About Us</a></li>
-        <li><a href="https://www.geeksforgeeks.org/careers/?ref=footer">Careers</a></li>
+
         <li><a href="privacypolicy.html">Privacy Policy</a></li>
         <li><a href="TandC.html">Terms and Conditions</a></li>
         <li><a href="">Copyright Policy</a></li

@@ -39,12 +39,7 @@ function initializeClock(id, endtime) {
       alert(t.days+' '+'days left for Pixel to come home!');
 
     }
-    if ((t.hours == 0) && (t.minutes == 0) && (t.seconds == 0)) {
-      
-      document.getElementById('xyz').play();
-      
 
-    }
 
     if (t.total <= 0) {
       clearInterval(timeinterval);

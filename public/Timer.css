@@ -1,15 +1,30 @@
 /* If the screen size is 601px or more, set the font-size of <div> to 80px */
 
-	body{
-		text-align: center;
+body {
 
-	  background-repeat: no-repeat;
-	  background-attachment: fixed;
-	  background-size: 100%;
-	}
+    --text-light: rgb(0, 0, 0);
+    
+    --text-dark: rgb(255, 255, 255);
+    --bg1-dark: #121212;
+    --bg2-dark: rgb(32,32,32);
 
+    --bg1-light: rgb(243,243,248);
+    --bg2-light: rgb(255, 255, 255);
+	--bgclock-light: rgb(204, 219, 232);
+	--bgclock2-light: rgb(204, 219, 232);
 
-	  
+    background-color: var( --bg1-light) !important;
+
+  }
+
+  body.dark{
+    --text-light: var(--text-dark) !important;
+    
+    --bg1-light: var(--bg1-dark);
+    --bg2-light: var(--bg2-dark);
+	--bgclock-light: var(--bg2-dark);
+	--bgclock2-light: black;
+}
 	  #clockdiv > div{
 
 
@@ -32,9 +47,9 @@
 		font-weight: 200;
 		text-align: center;
 
-		background-color: #fff;
+		background-color: var(--bg2-light);
 	border-radius: 10px;
-	box-shadow: 0 2px 4px 0 rgba(0,0,0,.15),0 6px 20px 0 rgba(0,0,0,.1), rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.15),0 6px 20px 0 rgba(0,0,0,.1), 	var(--bgclock2-light) 3px 3px 6px 0px inset, var(--bgclock-light) -3px -3px 6px 1px inset;;
 	padding: 10px;
 	margin-bottom: 10px;
 	height: 155px !important;
@@ -46,6 +61,6 @@
 
 		font-size: 14px;
 		
-
+		color: var(--text-light)
 	}
 

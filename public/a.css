@@ -91,7 +91,8 @@
 .search .symbol {
   height: 100%;
   width: 100%;
-  margin: auto;
+  margin-right: auto;
+  padding-right: auto;
   position: absolute;
   top: 0;
   z-index: 1;
